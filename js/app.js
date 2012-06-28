@@ -1,4 +1,5 @@
 requirejs.config({
+
 	baseUrl: 'js/lib',
 
 	paths: {
@@ -22,8 +23,13 @@ requirejs.config({
 
 });
 
-require(['jquery', 'underscore', 'backbone', 'app/category', 'app/item',
-'app/specialItem'], function($, _, Backbone, Category, Item, SpecialItem) {
+requirejs(
+[
+'jquery', 'underscore', 'backbone', 
+'app/category/category', 'app/category/item', 'app/category/specialItem'
+],
+
+function($, _, Backbone, Category, Item, SpecialItem) {
 
 	var c1 = new Category();
 	
