@@ -6,6 +6,7 @@ requirejs.config({
 		app: '../app',
 		jquery: 'jquery',
 		underscore: 'underscore',
+		handlebars: 'handlebars',
 		backbone: 'backbone'
 	},
 
@@ -18,6 +19,10 @@ requirejs.config({
 		backbone: {
 			deps: ['underscore', 'jquery'],
 			exports: 'Backbone'
+		},
+
+		handlebars: {
+			exports: 'Handlebars'
 		}
 	}
 
@@ -25,11 +30,13 @@ requirejs.config({
 
 requirejs(
 [
-'jquery', 'underscore', 'backbone', 
+'jquery', 'underscore', 'backbone', 'handlebars',
 'app/category/category', 'app/category/item', 'app/category/specialItem'
 ],
 
-function($, _, Backbone, Category, Item, SpecialItem) {
+function($, _, Backbone, HandleBars, Category, Item, SpecialItem) {
+
+	console.log(Handlebars);
 
 	var c1 = new Category();
 	
