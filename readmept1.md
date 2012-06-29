@@ -1,5 +1,6 @@
 Follow me on Twitter <a target="_blank" href="https://twitter.com/#!/svlada">click here </a>
 Jump to complete source code <a href="#source">source code</a>.
+Visit Keleraba (Backbone, Require, Handlebars) boilerplate project on <a target="_blank" href="https://github.com/svlada/Keleraba">github</a>. <span style="font-size:10px;"><em>Caution Keleraba is in early phase of development and serves as a learning resource.</em></span>
 
 This is introductory RequireJS tutorial. Reading material about AMD and RequireJS is in references section of article.
 
@@ -41,7 +42,7 @@ This is our sample RequireJS project structure.
 |-index.html
 |-readme.md
 
-Build scripts nad RequireJS optimization tool r.js are inside <strong>[build]</strong> directory.
+Build scripts and RequireJS optimization tool r.js are inside <strong>[build]</strong> directory.
 
 Application code reside in <strong>[webapp/js/app]</strong> directory. This is place where you should place all of your /Model/View/Router/Template code.
 
@@ -310,6 +311,7 @@ define(['./item'], function(Item) {
 	}
 
 	SpecialItem.prototype = new Item;
+	SpecialItem.prototype.constructor = SpecialItem;
 
 	return (SpecialItem);
 

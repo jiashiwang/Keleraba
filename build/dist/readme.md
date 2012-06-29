@@ -1,3 +1,6 @@
-Require.js dependency managment and asynchronous script loading
+This is Backbone, Handlebars, Jquery boilerplate.
 
-RequireJS allows for asynchronous JavaScript loading and dependency management
+Still in early phase of development.
+
+Read my RequireJS blog post series on: http://svlada.com/blog
+

@@ -4,12 +4,8 @@ js/app.js
 js/lib/jquery.js
 js/lib/underscore.js
 js/lib/backbone.js
+js/lib/handlebars.js
 js/app/category/category.js
 js/app/category/item.js
 js/app/category/specialItem.js
 js/app.js
-
-js/app/category/specialItem.js
-----------------
-js/app/category/item.js
-js/app/category/specialItem.js
