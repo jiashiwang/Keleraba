@@ -1,0 +1,1 @@
+define([],function(){var Item=function(itemName){this.name=itemName};return Item.prototype.getItemName=function(){return this.name},Item})
