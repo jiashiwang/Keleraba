@@ -4,7 +4,8 @@
     dir: "dist",
 
     modules: [
-    	{ name: "app" }
+    	{ name: "app" },
+        { name: "app/category/specialItem" }
     ],
 
 	paths: {

@@ -9,3 +9,8 @@ js/app/category/category.js
 js/app/category/item.js
 js/app/category/specialItem.js
 js/app.js
+
+js/app/category/specialItem.js
+----------------
+js/app/category/item.js
+js/app/category/specialItem.js

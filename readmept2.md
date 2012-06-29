@@ -13,7 +13,7 @@ This is part2 tutorial in RequireJs series. Reading material about r.js and Requ
 
 <h1><a name="t1" id="t0">Require.js optimizer</a></h2>
 
-Create your [webapp/build/build.js] file.
+Create your [webapp/build/build.js] file
 
 [cc lang="javascript"]
 {
@@ -116,8 +116,36 @@ js/app/category/item.js
 js/app/category/specialItem.js
 [/cc]
 
+[cc lang="javascript"]
+define("app/category/item", [], function () {
+    var Item = function (itemName) {
+            this.name = itemName
+        };
+    return Item.prototype.getItemName = function () {
+        return this.name
+    }, Item
+}), define("app/category/specialItem", ["./item"], function (Item) {
+    var SpecialItem = function (itemName) {
+            this.color = "Default color", this.weigth = "Default weigth", Item.call(this, itemName)
+        };
+    return SpecialItem.prototype = new Item, SpecialItem.prototype.constructor = SpecialItem, SpecialItem
+})
+[/cc]
 
 <h1><a name="t2" id="t0">Require.js optimizer dump dependencies to single file</a></h2>
+
+[cc lang="javascript"]
+Tracing dependencies for: ../app
+Uglifying file: C:/vlada/practice/require/webapp/build/app-built.js
+
+C:/vlada/practice/require/webapp/build/app-built.js
+----------------
+C:/vlada/practice/require/webapp/js/lib/jquery.js
+C:/vlada/practice/require/webapp/js/app/category/category.js
+C:/vlada/practice/require/webapp/js/app/category/item.js
+C:/vlada/practice/require/webapp/js/app/category/specialItem.js
+C:/vlada/practice/require/webapp/js/lib/../app.js
+[/cc]
 
 <h1><a name="source" id="source">Source code listing</a></h1>
 
