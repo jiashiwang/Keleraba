@@ -10,6 +10,7 @@ This is part2 tutorial in RequireJs series. Reading material about r.js and Requ
 
 <h1><a name="t0" id="t0">Introduction</a></h2>
 
+
 <h1><a name="t1" id="t0">Require.js optimizer</a></h2>
 
 <h1><a name="t2" id="t0">Require.js optimizer dump dependencies to single file</a></h2>
