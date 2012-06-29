@@ -9,7 +9,7 @@ define(['./item'], function(Item) {
 	}
 
 	SpecialItem.prototype = new Item;
-
+	SpecialItem.prototype.constructor = SpecialItem;
 	return (SpecialItem);
 
 });
