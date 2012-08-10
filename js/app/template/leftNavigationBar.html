@@ -1,0 +1,15 @@
+<script id="left-nav-template" type="text/x-handlebars-template">
+<div class="left-nav">
+	
+	Username: {{ name }}
+
+	<p>Skills:</p>
+	<ul>
+	{{#each languages}}
+		<li>{{this}}</li>
+	{{/each}}
+	</ul>
+
+	<a href="#info" id="action-info">Get info</a>
+</div>
+</script>
